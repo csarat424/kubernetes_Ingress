@@ -76,5 +76,7 @@ Now deploy the generated DNS Text Record in Route 53
 
 Next Deploy the Ingress Controller
 
+```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.3.1/deploy/static/provider/aws/deploy.yaml
+```
 
