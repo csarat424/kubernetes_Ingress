@@ -68,8 +68,10 @@ Install certbot
 sudo snap install --classic cerbot
 ```
 ```
-certbot certonly --manual --preferred-challenges=dns --key-type rsa  --email csarat424@gmail.com \
---server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.mscgov.xyz
+certbot certonly --manual --preferred-challenges dns \
+--manual-public-ip-logging-ok --key-type rsa --rsa-key-size 4096 \
+--email xyz@gmail.com --server https://acme-v02.api.letsencrypt.org/directory \
+--agree-tos -d "*.ssdgov.xyz
 ```
 
 Now deploy the generated DNS Text Record in Route 53
